@@ -15,7 +15,7 @@
 
     <header>
 
-        <a href="index.html"><img src="cq2.png" alt="logo"></a>
+        <a href="index.php"><img src="cq2.png" alt="logo"></a>
         <nav>
             <a href="" class="lienidentique">Compétences</a>
             <a href="" class="lienidentique">Réalisations</a>
@@ -50,6 +50,10 @@
         </form>
 
     </section>
+
+    <footer>
+        <span class="span_footer">&copy Christopher Quesnot</span>
+    </footer>
 
 </body>
 </html>

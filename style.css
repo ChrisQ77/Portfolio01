@@ -90,7 +90,7 @@ button {
     padding: 10px;
     font-size: 1rem;
     cursor: pointer;
-    color: black;
+    color: #242523;
     
 } 
 
@@ -100,16 +100,26 @@ button:hover {
 
 ::placeholder {
     font-size: 1rem;
+    
 }
 
-
+footer {
+    height: 80px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #242523;
+   
+}
 
 form h1 {
     font-size: 1.5rem;
+    color: #242523;
 }
 
 header a {
-    color: black;
+    color: #242523;
     text-decoration: none;
     padding: 1rem;  
 }
@@ -141,9 +151,9 @@ header a {
         width: 40%;
     }
 
-    header {
+    /* header {
         justify-content: space-around;
-    }
+    } */
     
 }
 
