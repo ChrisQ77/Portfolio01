@@ -15,7 +15,7 @@
 
     <header>
 
-        <a href="index.php"><img src="cq2.png" alt="logo"></a>
+        <a href="index.php"><img src="/images/cq2.png" alt="logo"></a>
         <nav>
             <a href="" class="lienidentique">Compétences</a>
             <a href="" class="lienidentique">Réalisations</a>
