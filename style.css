@@ -94,6 +94,14 @@ button {
     
 } 
 
+button:hover {
+    background-color: #7fbb7f;
+}
+
+::placeholder {
+    font-size: 1rem;
+}
+
 
 
 form h1 {
@@ -109,6 +117,10 @@ header a {
 .connexion {
     background-color: rgb(132, 200, 132);  
     border-radius: 3px;
+}
+
+.connexion:hover {
+    background-color: #7fbb7f;
 }
 
 

@@ -34,29 +34,22 @@
         <form action="">
             <h1>Me contacter</h1>
     
-            <label for="">Nom</label>
-            <input type="email" name="" id="">
+            <!-- <label for="">Nom</label> -->
+            <input type="email" name="" id="" placeholder="Nom">
     
-            <label for="">Adresse mail</label>
-            <input type="email" name="" id="">
+            <!-- <label for="">Adresse mail</label> -->
+            <input type="email" name="" id="" placeholder="Adresse mail">
 
-            <label for="">Sujet</label>
-            <input type="text" name="" id="">
+            <!-- <label for="">Sujet</label> -->
+            <input type="text" name="" id="" placeholder="Sujet">
 
-            <label for="">Message</label>
-            <textarea name="" id="" cols="10" rows="5"></textarea>
+            <!-- <label for="">Message</label> -->
+            <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea>
     
             <button>Envoyer</button>
         </form>
 
     </section>
-
-
-    
-
-
-    
-
 
 </body>
 </html>
