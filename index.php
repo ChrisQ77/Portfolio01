@@ -38,6 +38,21 @@
 //  include_once si on doit ajouter une seul fois un élement (footer,nav)
 
   ?>
+
+
+
+
+<?php 
+
+//   JE VEUX LA LISTE DES REALISATIONS
+//   ON SE CONNECTE A LA BASE
+
+require_once 'includes/connect.php';
+
+// J ECRIS LA REQUETE SQL QUI SELECTIONNE  MA TABLE REALISATIONS
+$sql = 'SELECT * FROM `realisations`;';
+
+?>
    
 
     
