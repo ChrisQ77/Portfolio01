@@ -68,7 +68,7 @@ header img {
 
 
 form {
-    width: 70%;
+    width: 60%;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -157,6 +157,7 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 35px;
    
 }
 
@@ -187,24 +188,35 @@ header a {
     background-color: #7fbb7f;
 }
 
+.html5 {
+    width: 45px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.css3 {
+    width: 32px;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+
 
 
 @media screen and (min-width:700px){
 
     form {
-        width: 80%;
+        width: 60%;
         margin: auto;
     }
 
-   .container_competences {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 20px 20px;
-    width: 80%;
-    margin: auto;
-   }
-    
+    .container_competences {
+        
+        width: 80%;
+        margin: auto;
+       }
+        
+
+   
 
   
     
@@ -213,7 +225,7 @@ header a {
 @media screen and (min-width:1000px){
 
     form {
-        width: 50%;
+        width: 60%;
     }
 
    
@@ -273,6 +285,16 @@ nav {
     .burger {
         display: none;
     }
+
+    .container_competences {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr; 
+        gap: 20px 20px;
+        width: 80%;
+        margin: auto;
+       }
+        
 
 }
 
