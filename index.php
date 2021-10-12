@@ -27,6 +27,18 @@
             <div class="bar3"></div>
         </div>
     </header>
+    
+
+  <?php 
+
+  include 'includes/container.php' 
+  
+//   include si on ajoute plusieurs fois un element
+
+//  include_once si on doit ajouter une seul fois un élement (footer,nav)
+
+  ?>
+   
 
     
     <section id="section_contact">
