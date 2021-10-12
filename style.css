@@ -39,6 +39,11 @@ header img {
     display: flex;
     align-items: center;
 }
+#principal {
+    height: 80vh;
+    
+}
+
 
 
 form {
@@ -141,6 +146,8 @@ header a {
         width: 65%;
     }
 
+   
+
   
     
 }
@@ -151,9 +158,7 @@ header a {
         width: 40%;
     }
 
-    /* header {
-        justify-content: space-around;
-    } */
+  
     
 }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,11 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -18,7 +20,7 @@
         <a href="index.php"><img src="/images/cq2.png" alt="logo"></a>
         <nav>
             <a href="" class="lienidentique">Compétences</a>
-            <a href="" class="lienidentique">Réalisations</a>
+            <a href="#section_realisations" class="lienidentique">Réalisations</a>
             <a href="#section_contact" class="connexion">Contact</a>
         </nav>
         <div class="burger">
@@ -27,16 +29,22 @@
             <div class="bar3"></div>
         </div>
     </header>
-    
 
+    <section id="principal">
+        <h1>Christopher Quesnot</h1>
+       
+
+    </section>
+    
+    
     <section id="section_contact">
 
         <form action="">
             <h1>Me contacter</h1>
-    
+
             <!-- <label for="">Nom</label> -->
             <input type="email" name="" id="" placeholder="Nom">
-    
+
             <!-- <label for="">Adresse mail</label> -->
             <input type="email" name="" id="" placeholder="Adresse mail">
 
@@ -45,7 +53,7 @@
 
             <!-- <label for="">Message</label> -->
             <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea>
-    
+
             <button>Envoyer</button>
         </form>
 
@@ -56,4 +64,5 @@
     </footer>
 
 </body>
+
 </html>
