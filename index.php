@@ -50,6 +50,9 @@
     <div class="container_competences">
 
 
+    <div class="card_competences">
+        <img src="" alt="" srcset="">
+    </div>
     <div class="card_competences"></div>
     <div class="card_competences"></div>
     <div class="card_competences"></div>
