@@ -81,9 +81,6 @@ form {
 }
 
 
-
-
-
 textarea {
     border: 1px solid rgb(132, 200, 132); 
     margin-bottom: 30px;
@@ -213,12 +210,7 @@ header a {
         
         width: 80%;
         margin: auto;
-       }
-        
-
-   
-
-  
+       } 
     
 }
 
@@ -226,13 +218,9 @@ header a {
 
     form {
         width: 60%;
-    }
-
-   
+    }  
     
 }
-
-
 
 nav {
     display: none;
@@ -258,8 +246,6 @@ nav {
     
 }
 
-
-
 .open .bar1 {
     transform: translateY(200%) rotate(45deg);
    
@@ -274,7 +260,6 @@ nav {
     transform: translateY(-200%) rotate(-45deg);
    
 }
-
 
 
 @media screen and (min-width: 800px) {
