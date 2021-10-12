@@ -50,7 +50,15 @@
 require_once 'includes/connect.php';
 
 // J ECRIS LA REQUETE SQL QUI SELECTIONNE  MA TABLE REALISATIONS
-$sql = 'SELECT * FROM `realisations`;';
+$sql = 'SELECT * FROM `realisations`;'; //(TESTER LA REQUETE DANS PHPMYADMIN)
+
+// J EXECUTE LA REQUETE 
+$requete = $db->query($sql);
+
+
+// JE RECUPERE LES DONNEES
+$articles = $requete->fetchAll(PDO::FETCH_ASSOC);
+
 
 ?>
    
