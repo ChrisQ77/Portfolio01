@@ -19,7 +19,7 @@
 
         <a href="index.php"><img src="/images/cq2.png" alt="logo"></a>
         <nav>
-            <a href="" class="lienidentique">Compétences</a>
+            <a href="#section_competences" class="lienidentique">Compétences</a>
             <a href="#section_realisations" class="lienidentique">Réalisations</a>
             <a href="#section_contact" class="connexion">Contact</a>
         </nav>
@@ -31,16 +31,44 @@
     </header>
 
     <section id="principal">
+        <div class="container_section_principal">
+
         <h1>Christopher Quesnot</h1>
+        <h2>Webdesigner</h2>
+
+        </div>
        
+    </section>
+
+    <section id="section_competences">
+
+    <div class="container_title_competence">
+    <h1>Mes compétences</h1>
+    </div>
+    
+
+    <div class="container_competences">
+
+
+    <div class="card_competences"></div>
+    <div class="card_competences"></div>
+    <div class="card_competences"></div>
+    <div class="card_competences"></div>
+    <div class="card_competences"></div>
+
+    </div>
+
+    
 
     </section>
     
     
     <section id="section_contact">
 
+    
+
         <form action="">
-            <h1>Me contacter</h1>
+        <h1>Me contacter</h1>
 
             <!-- <label for="">Nom</label> -->
             <input type="email" name="" id="" placeholder="Nom">
@@ -60,7 +88,9 @@
     </section>
 
     <footer>
-        <span class="span_footer">&copy Christopher Quesnot</span>
+        
+       <span class="span_footer">&copy portfolio Christopher Quesnot</span>
+       
     </footer>
 
 </body>

@@ -39,9 +39,30 @@ header img {
     display: flex;
     align-items: center;
 }
+
+#section_competences h1 {
+    font-size: 1.5rem;
+    color: #242523;
+}
+
+
 #principal {
     height: 80vh;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container_section_principal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container_title_competence {
+    width: 80%;
+    margin: auto;
 }
 
 
@@ -55,10 +76,11 @@ form {
     left: 50%;
     position: absolute; 
     transform: translate(-50%,-50%);  */
-    /* margin-top: 150px; */
-    
+    /* margin-top: 150px; */ 
 
 }
+
+
 
 
 
@@ -71,6 +93,8 @@ textarea {
 .logo {
     font-size: 1.5rem;
 }
+
+
 
 input {
     margin-bottom: 30px;
@@ -108,19 +132,43 @@ button:hover {
     
 }
 
+.container_competences {
+    width: 70%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 2fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 20px;
+    
+}
+
+.card_competences {
+    width: 100%;
+    background-color: rgb(248, 249, 250);
+    height: 150px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
+
+
 footer {
-    height: 80px;
-    margin-top: 20px;
+    height: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #242523;
    
 }
 
-form h1 {
-    font-size: 1.5rem;
+.span_footer {
     color: #242523;
+}
+
+form h1 {
+   
+        font-size: 1.5rem;
+        color: #242523;
+    
 }
 
 header a {
@@ -143,10 +191,19 @@ header a {
 @media screen and (min-width:700px){
 
     form {
-        width: 65%;
+        width: 80%;
+        margin: auto;
     }
 
-   
+   .container_competences {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 20px 20px;
+    width: 80%;
+    margin: auto;
+   }
+    
 
   
     
@@ -155,10 +212,10 @@ header a {
 @media screen and (min-width:1000px){
 
     form {
-        width: 40%;
+        width: 70%;
     }
 
-  
+   
     
 }
 
