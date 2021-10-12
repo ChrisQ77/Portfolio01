@@ -29,41 +29,6 @@
     </header>
     
 
-  <?php 
-
-  include 'includes/container.php' 
-  
-//   include si on ajoute plusieurs fois un element
-
-//  include_once si on doit ajouter une seul fois un élement (footer,nav)
-
-  ?>
-
-
-
-
-<?php 
-
-//   JE VEUX LA LISTE DES REALISATIONS
-//   ON SE CONNECTE A LA BASE
-
-require_once 'includes/connect.php';
-
-// J ECRIS LA REQUETE SQL QUI SELECTIONNE  MA TABLE REALISATIONS
-$sql = 'SELECT * FROM `realisations`;'; //(TESTER LA REQUETE DANS PHPMYADMIN)
-
-// J EXECUTE LA REQUETE 
-$requete = $db->query($sql);
-
-
-// JE RECUPERE LES DONNEES
-$articles = $requete->fetchAll();
-
-
-?>
-   
-
-    
     <section id="section_contact">
 
         <form action="">

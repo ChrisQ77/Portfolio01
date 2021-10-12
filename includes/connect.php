@@ -21,7 +21,7 @@ const DBNAME = 'portfolio';
 // NE RIEN MODIFIER CI-DESSOUS !!!
 // ON DEFINIT LE DSN (DATA SOURCE NAME) MYSQL
 
-$dsn = 'mysql:dbname' . DBNAME . ';host=' . DBHOST;
+$dsn = 'mysql:dbname=' . DBNAME . ';host=' . DBHOST;
 
 // ON TENTE DE SE CONNECTER AU SERVER
 
@@ -32,7 +32,9 @@ try {
     // EXECUTE QUOI QU IL ARRIVE
     $db = new PDO($dsn, DBUSER, DBPASS);
     // ON DEFINI LA METHODE DE TECH PAR DEFAUT
-    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE)
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+    // ON DEFINIT LE CHARSET DES TRANSFERTS DE DONNEES EN UTF8
+    $db->exec('SET NAMES utf8');
 
 
 }catch(PDOException $e){ //ON ATTRAPE L EXCEPTION PDO
