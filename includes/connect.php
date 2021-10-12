@@ -31,6 +31,8 @@ try {
 
     // EXECUTE QUOI QU IL ARRIVE
     $db = new PDO($dsn, DBUSER, DBPASS);
+    // ON DEFINI LA METHODE DE TECH PAR DEFAUT
+    $db->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE)
 
 
 }catch(PDOException $e){ //ON ATTRAPE L EXCEPTION PDO

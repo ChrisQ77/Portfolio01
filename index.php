@@ -57,7 +57,7 @@ $requete = $db->query($sql);
 
 
 // JE RECUPERE LES DONNEES
-$articles = $requete->fetchAll(PDO::FETCH_ASSOC);
+$articles = $requete->fetchAll();
 
 
 ?>
