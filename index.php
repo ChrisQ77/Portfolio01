@@ -1,3 +1,22 @@
+<?php
+
+if (!empty($_POST)){
+    if(
+        isset($_POST["name"], $_POST["email"], $_POST["sujet"], $_POST["message"])
+        && !empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["sujet"]) && !empty($_POST["sujet"])
+    ){
+
+        $titre = strip_tags($_POST["name"], $_POST["email"], $_POST["sujet"], $_POST["message"]);
+       
+
+    }else{
+        die("Le formulaire est incomplet");
+    }
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -75,20 +94,20 @@
 
     
 
-        <form action="">
+        <form action="" method="$_POST">
         <h1>Me contacter</h1>
 
             <!-- <label for="">Nom</label> -->
-            <input type="email" name="" id="" placeholder="Nom">
+            <input type="text" name="name" id="name" placeholder="Nom">
 
             <!-- <label for="">Adresse mail</label> -->
-            <input type="email" name="" id="" placeholder="Adresse mail">
+            <input type="email" name="email" id="email" placeholder="Adresse mail">
 
             <!-- <label for="">Sujet</label> -->
-            <input type="text" name="" id="" placeholder="Sujet">
+            <input type="text" name="sujet" id="sujet" placeholder="Sujet">
 
             <!-- <label for="">Message</label> -->
-            <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea>
+            <textarea name="message" id="message" cols="10" rows="5" placeholder="Message"></textarea>
 
             <button type="submit">Envoyer</button>
         </form>
