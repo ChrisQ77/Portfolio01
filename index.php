@@ -12,9 +12,7 @@ if (!empty($_POST)){
     }else{
         die("Le formulaire est incomplet");
     }
-}
-
-?>
+}?>
 
 
 <!DOCTYPE html>
