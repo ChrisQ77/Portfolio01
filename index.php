@@ -35,6 +35,7 @@
 
         <h1>Christopher Quesnot</h1>
         <h2>Webdesigner</h2>
+        
 
         </div>
        
@@ -89,7 +90,7 @@
             <!-- <label for="">Message</label> -->
             <textarea name="" id="" cols="10" rows="5" placeholder="Message"></textarea>
 
-            <button>Envoyer</button>
+            <button type="submit">Envoyer</button>
         </form>
 
     </section>
