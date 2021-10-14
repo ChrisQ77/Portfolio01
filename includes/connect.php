@@ -15,7 +15,7 @@ const DBPASS ='';
 
 // NOM DE LA BASE DE DONNEES (DBNAME)
 
-const DBNAME = 'portfolio';
+const DBNAME = 'baseportfolio';
 
 
 // NE RIEN MODIFIER CI-DESSOUS !!!
