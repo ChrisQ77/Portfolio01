@@ -8,12 +8,12 @@ if (!empty($_POST)) {
     // ON VERIFIE QUE TOUT LES CHAMPS "OBLIGATOIRES" SONT REMPLIS
     if (
         isset(
-            $_POST['name'],
+            $_POST['nickname'],
             $_POST['email'],
             $_POST['sujet'],
             $_POST['mess'],
         )
-        && !empty($_POST['name'])
+        && !empty($_POST['nickname'])
         && !empty($_POST['email'])
         && !empty($_POST['sujet'])
         && !empty($_POST['mess'])
@@ -25,7 +25,7 @@ if (!empty($_POST)) {
         // MOT DE PASSE SUPERIEUR A 12 CARACTERE
         // ON "NETTOIE" LE CONTENU DES CHAMPS DE TEXTE
         // ON RETIRE TOUTE BALISE HTML OU ON ENCODE LES CARACTERE <,>,/ EN LEURS EQUIVALENTS &lt;, &gt; ...
-        $name = strip_tags($_POST['name']);
+        $name = strip_tags($_POST['nickname']);
         $sujet = strip_tags($_POST['sujet']);
         $message = strip_tags($_POST['mess']);
 
@@ -51,7 +51,7 @@ if (!empty($_POST)) {
         require_once 'includes/connect.php';
 
         // ON ECRIT LA REQUETE
-        $sql = "INSERT INTO `baseportfolio`(`name`, `mail`, `sujet`, `message`, `role`) VALUES (:nickname, :email, :sujet, :mess, '[\"ROLE_USERS\"]' );"; //(NOM DES CHAMPS DE LA TABLE ET DANS LE MEME ORDRE ENTRE INSERT INTO ET VALUES)
+        $sql = "INSERT INTO `formulaire`(`name`, `mail`, `sujet`, `message`, `role`) VALUES (:nickname, :email, :sujet, :mess, '[\"ROLE_USERS\"]' );"; //(NOM DES CHAMPS DE LA TABLE ET DANS LE MEME ORDRE ENTRE INSERT INTO ET VALUES)
 
         // ON PREPARE LA REQUETE 
         $requete = $db->prepare($sql);
@@ -153,7 +153,7 @@ if (!empty($_POST)) {
 
     
 
-        <form method="$_POST">
+        <form method="POST">
         <h1>Me contacter</h1>
 
             <label for="nickname">Nom</label>
